@@ -7,7 +7,7 @@ module.exports={
     output: {
         path: path.resolve(__dirname, "dist"),
         filename: "bundle.js",
-        //IE浏览器不支持剪头函数，通过environment参数可以强制webpack使用普通函数
+        //IE浏览器不支持箭头函数，通过environment参数可以强制webpack使用普通函数
         environment: {
             arrowFunction: false
         }
